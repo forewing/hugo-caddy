@@ -1,4 +1,6 @@
-# Automatic update Hugo server powered by Caddy
+# hugo-caddy
+
+Automatic update Hugo server powered by Caddy
 
 ## Config the server
 
