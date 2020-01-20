@@ -1,0 +1,12 @@
+0.0.0.0:5000 {
+    root /var/www/public
+    git {
+        repo        {YOUR_REPO_URL}
+        path        /data/repo
+        branch      master
+        key         /data/id_rsa
+        hook        {YOUR_HOOK_URL} {YOUR_HOOK_SECRET}
+        then        hugo -s /data/repo -d /var/www/public
+    }
+    log stdout
+}
