@@ -37,3 +37,17 @@ Automatic update Hugo server powered by Caddy
 ```
 docker-compose up -d
 ```
+
+## Notes
+
+If you want pre-built images, replace following line in `docker-compose.yml`
+
+```yml
+build: .
+```
+
+with
+
+```yml
+image: forewing/hugo-caddy
+```
