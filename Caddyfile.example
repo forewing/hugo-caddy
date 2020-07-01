@@ -7,7 +7,7 @@
         key         /data/id_rsa
         hook        {YOUR_HOOK_URL} {YOUR_HOOK_SECRET}
         then        rm -rf /var/www/public
-        then        hugo -s /data/repo -d /var/www/public
+        then        hugo -s /data/repo -d /var/www/public --minify
     }
     log stdout
 }
